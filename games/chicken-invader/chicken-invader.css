@@ -1,0 +1,63 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side {
+    background-color: #111;
+    color: #ff0;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 10px;
+}
+
+h1 {
+    font-size: 44px;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.score {
+    font-size: 24px;
+    padding: 0 0 10px 0 !important;
+    margin: 0 !important;
+    color: #ff0;
+    text-align: center;
+}
+
+#img-theme {
+    width: 300px;
+    height: 300px;
+    filter: drop-shadow(0 0 3px #ccc);
+    margin: 5px 0 !important;
+}
+
+.reset {
+    background-color: #0f0;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    padding: 5px 20px;
+    border-radius: 5px !important;
+    margin: 10px 0;
+    color: #333;
+}
+
+.reset:hover {
+    background-color: #808080;
+    color: #ff0;
+    border: 2px solid #ddd;
+}
+
+#board {
+    background-image: url('./assets/chicken-invader-bg.jpg');
+    border: 1px solid transparent;
+    border-radius: 10px;
+}

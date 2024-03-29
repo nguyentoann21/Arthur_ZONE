@@ -1,0 +1,62 @@
+body {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #444;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side {
+    background-color: #000;
+    color: #ff0;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 20px 40px;
+    margin-right: 5px;
+    border: 2px solid #ddd;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+h3 {
+    font-size: 42px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#theme {
+    width: 350px;
+    height: 350px;
+    filter: drop-shadow(0 0 3px #ff0);
+}
+
+#reset {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 !important;
+    padding: 10px 30px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin: 10px 0 !important;
+}
+
+#reset:hover {
+    border: 2px solid #fff;
+    background-color: #ff0;
+}
+
+#board {
+    background-image: url('./assets/snake-bg.jpg');
+    background-repeat: no-repeat;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    object-fit: cover;
+}

@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-image: url('./assets/background.jpg');
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.title-score {
+    background-color: #222;
+    margin: 0 !important;
+    width: 30%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    height: 580px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ff0;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+h3 {
+    text-align: left;
+    padding: 0 30px !important;
+    font-size: 36px;
+    color: #ff0;
+}
+
+#theme {
+    width: 280px;
+    height: 300px;
+    filter: drop-shadow(0 0 2px #aaa) drop-shadow(0 0 3px #ff0);
+}
+
+.reset {
+    background-color: #0f0;
+    border-radius: 5px;
+    padding: 3px 10px;
+    margin: 10px 0;
+    color: #111;
+    font-size: 24px;
+    border: 1px solid transparent;
+    filter: drop-shadow(0 0 2px #fff);
+}
+
+.reset:hover {
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+#board {
+    background-image: url('./assets/soil.jpg');
+    width: 600px;
+    height: 580px;
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#board div {
+    width: 200px;
+    height: 180px;
+    background-image: url('./assets/pot.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px 0;
+}
+
+#board div img {
+    /*size for all img tag in div in board*/
+    width: 130px;
+    height: 120px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}

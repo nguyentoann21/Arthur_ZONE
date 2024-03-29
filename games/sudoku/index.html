@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="sudoku.css">
+    <script src="sudoku.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <h1 class="title">Sudoku</h1>
+            <h3 id="error">Missed number: 0</h3>
+            <div>
+                <img src="./assets/sudoku-theme.png" class="theme" alt="" />
+            </div>
+            <button id="new-game">New Game</button>
+        </div>
+
+        <!-- 9x9 board -->
+        <div class="right">
+            <div id="board"></div>
+            <br>
+            <div id="digit"></div>
+        </div>
+    </div>
+</body>
+
+</html>

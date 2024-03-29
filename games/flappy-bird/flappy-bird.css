@@ -1,0 +1,18 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* This prevents the scrollbar by hiding overflow */
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#board {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assets/flappy-bird-background.png');
+    background-size: contain;
+    display: block; /* Removes extra space/margin under the canvas */
+    margin: 0 auto; /* Center the canvas if it's not already */
+}
