@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Register Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-register">
+            <!-- login form -->
+            <form action="" class="login_form">
+                <h2 class="title">Login</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="username" placeholder="Email or usename">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <input type="submit" value="Login" class="btn" />
+                <p class="social-text">Continue with</p>
+                <div class="social-media">
+                    <a href="#" class="social-connect">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-connect">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-connect">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-connect">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-connect">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <p class="account-text">Don't have an account? <a href="#" id="register_btn_2">Register</a></p>
+            </form>
+
+            <!-- register form -->
+            <form action="" class="register_form">
+                <h2 class="title">Register</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="username" placeholder="Usename">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <input type="submit" value="Register" class="btn" />
+                <p class="social-text">Register with</p>
+                <div class="social-media">
+                    <a href="#" class="social-connect">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-connect">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-connect">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-connect">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-connect">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <p class="account-text">Already have an account? <a href="#" id="login_btn_2">Login</a></p>
+            </form>
+        </div>
+        <div class="panel-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Member of Brand?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, tempora magni! Voluptatem expedita laborum fugit.</p>
+                    <button class="btn" id="login_btn">Login</button>
+                </div>
+                <img class="image" src="images/login.jpg" alt="" />
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>New to Brand?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, tempora magni! Voluptatem expedita laborum fugit.</p>
+                    <button class="btn" id="register_btn">Register</button>
+                </div>
+                <img class="image" src="images/register.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

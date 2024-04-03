@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Sport Car",
+        "price": 1500000,
+        "image": "images/car_1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Sport Car",
+        "price": 2000000,
+        "image": "images/car_2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Sport Car",
+        "price": 2200000,
+        "image": "images/car_3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Sport Car",
+        "price": 1600000,
+        "image": "images/car_4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Sport Car",
+        "price": 2800000,
+        "image": "images/car_5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Sport Car",
+        "price": 3700000,
+        "image": "images/car_6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Sport Car",
+        "price": 4800000,
+        "image": "images/car_7.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Sport Car",
+        "price": 6600000,
+        "image": "images/car_8.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Sport Car",
+        "price": 1000000,
+        "image": "images/car_9.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Sport Car",
+        "price": 3500000,
+        "image": "images/car_10.jpg"
+    }
+]

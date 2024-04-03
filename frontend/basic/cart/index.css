@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #ddd;
+}
+
+.container {
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+}
+
+.container .cart i {
+    font-size: 30px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+header .title {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+header .cart {
+    position: relative;
+    cursor: pointer;
+}
+
+header .cart span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: #c00;
+    color: #eee;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    right: -15px;
+    font-size: 12px;
+}
+
+.list-product .item img {
+    width: 140px;
+    height: 80px;
+    object-fit: cover;
+    filter: drop-shadow(0 0 2px #111) drop-shadow(0 0 2px #111);
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.list-product {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.list-product .item {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.list-product .item h2 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.list-product .item .price {
+    letter-spacing: 1px;
+    font-size: small;
+}
+
+.list-product .item button {
+    background-color: #686877;
+    color: #eee;
+    padding: 5px 20px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.cart-view {
+    width: 35vw;
+    color: #eee;
+    background-color: #353432;
+    position: fixed;
+    inset: 0 -35vw 0 auto;
+    display: grid;
+    grid-template-rows: 55px 1fr 55px;
+}
+
+body.show-cart .container {
+    margin-right: 250px;
+}
+
+body.show-cart .cart-view {
+    inset: 0 0 0 auto;
+}
+
+body.show-cart .list-product,
+body.show-cart header{
+    filter: blur(8px);
+}
+
+.cart-view h1 {
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.cart-view .btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cart-view .btn button {
+    border: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cart-view .btn button:nth-child(1) {
+    background-color: #686877;
+    color: #eee;
+}
+
+.cart-view .btn button:nth-child(2) {
+    background-color: #0f0;
+    color: #111;
+}
+
+.cart-view .list-cart .item img {
+    width: 140px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 2px #eec);
+    margin: 5px 10px;
+}
+
+.cart-view .list-cart .item {
+    display: grid;
+    grid-template-columns: 140px 150px 60px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.list-cart .quantity span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    width: 25px;
+    height: 25px;
+    color: #eee;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.list-cart .quantity span:nth-child(1),
+.list-cart .quantity span:nth-child(3) {
+    font-size: 18px !important;
+    font-weight: 900 !important;
+}
+
+.list-cart .quantity span:nth-child(1) {
+    background-color: #0a0;
+}
+
+.list-cart .quantity span:nth-child(3) {
+    background-color: #10f;
+}
+
+.list-cart .quantity span:nth-child(2) {
+    background-color: transparent;
+}
+
+.list-cart .item:nth-child(even) {
+    background-color: #eee1;
+}
+
+.list-cart {
+    overflow: auto;
+}
+
+.list-cart::-webkit-scrollbar {
+    width: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .list-product {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .list-product {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .list-product {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

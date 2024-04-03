@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: monospace;
+}
+
+.slider {
+    width: 1300px;
+    height: 700px;
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: max-content;
+    transition: 1s;
+}
+
+.list img {
+    width: 1300px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.buttons {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #eee;
+    background-color: #fff5;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #eee;
+    color: #111;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dots li {
+    list-style: none;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.dots li.active {
+    width: 30px;
+    background-color: #ff0;
+}
